@@ -1,0 +1,57 @@
+<html>
+    <head>
+    <title>Your Details </title>
+    </head>
+    <style>
+    h3 {
+    font-family:arial;
+    };
+    </style>
+    <body>
+    <script>
+    	var Name = prompt("Enter your Name : ");
+    	var NumberofCourses = prompt("Enter your Number of courses : ");
+    	 
+    	var inputArray = [];
+		var size = NumberofCourses; //Maximum Array size
+
+		for(var i=0; i<NumberofCourses; i++) {
+	
+		//Taking Input from user
+		inputArray[i] = prompt('Enter the course you offer ' + (i+1));
+		}
+
+		//Print the array in the console.
+		    	document.write("<br>");
+    	document.write("<h3> Your Details </h3>");
+    	document.write("<font face='arial' size='3'>")
+
+   		document.write(" Name : " + Name + ".</font><br>");
+    	document.write("<font face='arial' size='3'>")
+
+    	document.write(" Courses : " + (inputArray) + ".</font><br><br>");
+    	document.write("<font face='arial' size='3'>")
+
+    	let reminder = NumberofCourses % 2;
+    	if (reminder == 0) {
+        	document.write("You have even number of courses");
+        	for (let x = 1; x <= 200; x++) {
+				if (x % 2 == 0) {
+					document.write(x + ", ")
+					}
+
+    			} 
+    		}else {
+        	document.write("Your have odd number of courses ");	
+        	for (let x = 1; x <= 200; x++) {
+				if (x % 2 != 0) {
+					document.write(x + ", ")
+					}
+    			} 
+    		}
+
+
+    	document.write("<h3> End of Program </h3>");
+    </script>
+    </body>
+    </html>
